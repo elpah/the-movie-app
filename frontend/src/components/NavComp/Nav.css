@@ -1,0 +1,22 @@
+.nav__headercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(28, 23, 27);
+    height: 60px;
+    overflow: hidden;
+
+  }
+  .nav__search-container {
+    display: flex;
+    align-items: center;
+    background-color: rgb(18, 17, 17);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 20px;
+  }
+  
+  .nav__logo-image {
+    height: 70px;
+  }

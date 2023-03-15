@@ -1,0 +1,87 @@
+.add__newmovie{
+    font-size: 15px;
+    background-color: #171717;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+.form__header{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(207, 207, 207);
+  }
+
+  .movie__form {
+    color: rgb(207, 207, 207);
+
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.8s ease-in-out, height 0.6s ease-in-out;
+  }
+  .movie__form.visible {
+    opacity: 1;
+    height: auto;
+  }
+  .input__label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .input__div {
+    margin: auto 10% 20px 5%;
+    width: 80%;
+  }
+  .input__field {
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%;
+  }
+  .input__field:focus {
+    border-color: #13471c;
+  }
+  .Form__button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #31465b;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 50%;
+  }
+  .Form__button:hover {
+    background-color: #04ab22;
+  }
+
+
+  @media screen and  (min-width:500px){
+
+  }
+  
+
+  
+  
+ 
+  
+  
+  
+  
+  
+ 
+
+ 
+ 
+  
