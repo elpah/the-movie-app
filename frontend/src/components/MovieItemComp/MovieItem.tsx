@@ -1,5 +1,5 @@
 import React from 'react';
-import "/Users/salt-dev/Desktop/TheMovieListApp/frontend/src/components/MovieItemComp/MovieItemStyle.css"
+import "./MovieItemStyle.css"
 type Props = {
     movie: Movie,
     onDeleteMovie: (movieId: string)=> void,

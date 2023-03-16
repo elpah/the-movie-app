@@ -1,19 +1,12 @@
 import React from "react";
 import SearchMovie from "../searchMovieComp/SearchMovie";
-import myimg from "/Users/salt-dev/Desktop/TheMovieListApp/frontend/src/images/elpahlogo.png";
+import myimg from '../../images/elpahlogo.png';
 import "./Nav.css";
+import { Movie } from "../../types";
+
 
 type Props = {
   onAddSearchMovie: (data: Movie) => void;
-};
-type Movie = {
-  movieId: string;
-  title: string;
-  year: string;
-  posterUrl: string;
-  plot: string;
-  likes: number;
-  dislikes: number;
 };
 
 export default function Nav({ onAddSearchMovie }: Props) {

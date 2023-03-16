@@ -1,6 +1,6 @@
 import React from 'react';
 import MovieItem from '../MovieItemComp/MovieItem';
-import "/Users/salt-dev/Desktop/TheMovieListApp/frontend/src/components/MovieListComp/MovieList.css"
+import "./MovieList.css"
 
 type Props = {
     movies: Movie[],
