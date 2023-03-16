@@ -1,18 +1,11 @@
 import React, { FormEvent, useState } from "react";
 import "./SearchMovie.css";
+import { Movie } from "../../types";
 
 type Props = {
   onAddSearchMovie: (data: Movie) => void;
 };
-type Movie = {
-  movieId: string;
-  title: string;
-  year: string;
-  posterUrl: string;
-  plot: string;
-  likes: number;
-  dislikes: number;
-};
+
 
 export default function SearchMovie({ onAddSearchMovie }: Props) {
   const [input, setInput] = useState("");

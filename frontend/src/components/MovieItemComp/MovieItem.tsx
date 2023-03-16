@@ -1,5 +1,6 @@
 import React from 'react';
 import "./MovieItemStyle.css"
+import { Movie } from '../../types';
 type Props = {
     movie: Movie,
     onDeleteMovie: (movieId: string)=> void,
@@ -7,15 +8,7 @@ type Props = {
     onDislikeMovie:(movieId: string)=> void,
 }
 
-type Movie = {
-    movieId: string
-    title: string
-    year: string
-    posterUrl: string
-    plot:string
-    likes:number
-    dislikes:number
-  }
+
 function MovieItem({movie, onDeleteMovie, onLikeMovie, onDislikeMovie}: Props) {
     return (
     

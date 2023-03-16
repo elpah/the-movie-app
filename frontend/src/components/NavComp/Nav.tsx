@@ -4,7 +4,6 @@ import myimg from '../../images/elpahlogo.png';
 import "./Nav.css";
 import { Movie } from "../../types";
 
-
 type Props = {
   onAddSearchMovie: (data: Movie) => void;
 };
