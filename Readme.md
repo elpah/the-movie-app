@@ -26,6 +26,6 @@ API Routes
 POST /movies - Adds a movie to the database
 GET /movies - Retrieves all movies from the database
 GET /movies/:id - Retrieves a single movie from the database by ID
-PUT /movies/:id - Updates a movie in the database by ID
+PATCH /movies/:id - Updates a movie likes and dislikes in the database by ID
 DELETE /movies/:id - Deletes a movie from the database by ID
 GET /search/:title - Searches for a movie using the external API by title and returns the first result
