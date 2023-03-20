@@ -1,6 +1,6 @@
 Movie List App
 
-This is a simple movie list app. It allows a user to add movies to a database, Users can search for movies, and delete movies from the list and also add likes and dislikes. The app uses the external API http://www.omdbapi.com/ to fetch movie data.
+This is a movie list app. It allows a user to add movies to a database, Users can search for movies, and delete movies from the list and also add likes and dislikes. The app uses the external API http://www.omdbapi.com/ to fetch movie data.
 
 Technologies Used
 
