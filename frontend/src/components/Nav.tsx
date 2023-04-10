@@ -2,11 +2,8 @@ import React from 'react';
 import SearchMovie from './searchMovieComp/SearchMovie';
 import "./Nav.css";
 
-type Props = {
-    onAddSearchMovie: (data: Movie) => void;
-  }
+
   type Movie = {
-  
     movieId:string
     title: string
     year: string
@@ -14,6 +11,9 @@ type Props = {
     plot:string
     likes:number
     dislikes:number
+  }
+  type Props = {
+    onAddSearchMovie: (data: Movie) => void;
   }
   
 export default function Nav({onAddSearchMovie}:Props) {

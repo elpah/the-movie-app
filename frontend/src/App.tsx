@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import { Movie } from './types';
 import MovieForm from './components/MovieFormComp/MovieForm';
 import MoviesList from './components/MovieListComp/MoviesList';
 import Nav from './components/NavComp/Nav';
@@ -36,7 +37,6 @@ function App() {
       },
       body: JSON.stringify(data),
     });
-
     const movie = await response.json();
     if(movie){
       setMovies((prevState) => {
@@ -44,7 +44,6 @@ function App() {
       });
     }
     if (response.ok) {
-      
       resetForm();
     } 
   }
@@ -98,17 +97,6 @@ async function handleLikeMovie(movieId: string){
       <Footer/>
       </>
   );
-}
-
-
-type Movie = {
-  movieId: string
-  title: string
-  year: string
-  posterUrl: string
-  plot:string
-  likes:number
-  dislikes:number
 }
 
 export default App;

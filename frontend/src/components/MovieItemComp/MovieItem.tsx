@@ -11,8 +11,6 @@ type Props = {
 
 function MovieItem({movie, onDeleteMovie, onLikeMovie, onDislikeMovie}: Props) {
     return (
-    
-        
         <div className='movie__card'>            
             <img className='movie__img' src={movie.posterUrl} alt="img not found" />
             <h3 className='movie__title'>{movie.title}</h3>

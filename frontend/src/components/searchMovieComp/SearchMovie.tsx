@@ -23,10 +23,9 @@ export default function SearchMovie({ onAddSearchMovie }: Props) {
           year: data.year,
           likes: data.likes,
           dislikes: data.dislikes,
-        });
+        })
         console.log(data);
       })
-
       .catch((error) => console.error(error));
   }
   //change any type later

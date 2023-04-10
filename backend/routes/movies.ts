@@ -8,7 +8,6 @@ import { Movie } from "../db/movie";
 router.get("/:title", async (req, res) => {
   const title = req.params.title;
   const apiKey = "19d9136f";
-  
   try {
     const response: AxiosResponse = await axios.get(`http://www.omdbapi.com/?t=${title}&apikey=${apiKey}`);
     const data = response.data;
@@ -19,7 +18,7 @@ router.get("/:title", async (req, res) => {
       posterUrl: data.Poster,
       plot: data.Plot,
     });
-    res.status(200).json({ movie });
+    res.status(200).json(movie);
   } catch (err) {
     console.error(err);
     res.status(500).send("Error fetching movie data");
@@ -29,7 +28,6 @@ router.get("/:title", async (req, res) => {
 router.get('/', async (req, res) => {
   try {
     const movieList = await movieDb.getmovies();
-
     res.status(200).json(movieList);
   } catch (err) {
     console.error(err);
