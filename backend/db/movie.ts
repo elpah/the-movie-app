@@ -91,12 +91,14 @@ const dislikeMovie = async (movieId: string): Promise<UpdateResult> => {
 };
 
 
-type Movie = {
-  movieId: string;
-  title: string;
-  year: string;
-  posterUrl: string;
-  plot: string;
+export type Movie = {
+  movieId: string,
+  title: string,
+  year: string,
+  posterUrl: string,
+  plot: string,
+  // likes?:number,
+  // dislikes?:number
 };
 
 export default {

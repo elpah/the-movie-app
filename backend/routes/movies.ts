@@ -1,28 +1,30 @@
 import express from "express";
 import movieDb from "../db/movie";
-
+import axios, { AxiosResponse } from 'axios';
 const router = express.Router();
+import { Movie } from "../db/movie";
+
 
 router.get("/:title", async (req, res) => {
   const title = req.params.title;
   const apiKey = "19d9136f";
+  
   try {
-    const response = await fetch(`http://www.omdbapi.com/?t=${title}&apikey=${apiKey}`);
-    const data = await response.json();
-    const movie = await movieDb.createNewMovie({
+    const response: AxiosResponse = await axios.get(`http://www.omdbapi.com/?t=${title}&apikey=${apiKey}`);
+    const data = response.data;
+    const movie: Movie = await movieDb.createNewMovie({
       movieId: "",
       title: data.Title,
       year: data.Year,
       posterUrl: data.Poster,
       plot: data.Plot,
     });
-    res.status(200).json(movie);
+    res.status(200).json({ movie });
   } catch (err) {
     console.error(err);
     res.status(500).send("Error fetching movie data");
   }
 });
-
 
 router.get('/', async (req, res) => {
   try {
