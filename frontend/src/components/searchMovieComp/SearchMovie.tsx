@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from "react";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 import "./SearchMovie.css";
 import { Movie } from "../../types";
 
@@ -24,12 +24,11 @@ export default function SearchMovie({ onAddSearchMovie }: Props) {
           likes: data.likes,
           dislikes: data.dislikes,
         })
-        console.log(data);
       })
       .catch((error) => console.error(error));
   }
   //change any type later
-  function handleInputChange(event: any) {
+  function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
     setInput(event.target.value);
   }
 
